@@ -4,73 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PsyConnect</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #acfddf;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #bceed1;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-        .main-content {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .app-buttons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .app-buttons img {
-            width: 150px;
-            margin: 0 10px;
-        }
-        .carousel {
-            display: flex;
-            justify-content: center;
-            margin-top: 30px;
-        }
-        .carousel img {
-            width: 200px;
-            border-radius: 15px;
-        }
-        footer {
-            background-color: #C1EDEB;
-            padding: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 0;
-            background-color: #E0F7F4;
-        }
-        .features div {
-            width: 25%;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
 </head>
 <body>
+    <!-- Encabezado -->
     <header>
         <h1>PSYCONNECT</h1>
         <nav>
@@ -85,17 +22,21 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Contenido principal -->
     <div class="main-content">
         <h2>Una app, muchos usos</h2>
         <p>¡Cuida tu bienestar mental con nuestra app móvil! Conecta fácilmente con expertos, elige tu modalidad preferida y programa citas personalizadas. ¡Descárgala ahora!</p>
         <div class="app-buttons">
             <a href="#"><img src="images.png" alt="Descargar en App Store"></a>
             <a href="#"><img src="playstore.png" alt="Descargar en Google Play"></a>
-            <div class="carousel">
-                <img src="verde.png" alt="Noticias y Actualizaciones">
-            </div>
+        </div>
+        <div class="carousel">
+            <img src="verde.png" alt="Noticias y Actualizaciones">
         </div>
     </div>
+
+    <!-- Características -->
     <div class="features">
         <div>
             <h3>Planes únicos</h3>
@@ -110,6 +51,8 @@
             <p>Haz click para obtener más información.</p>
         </div>
     </div>
+
+    <!-- Pie de página -->
     <footer>
         <p>¡Únete a nuestra comunidad!</p>
         <p>©2024 por PsyConnect</p>
