@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #d4f5ee;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .header {
+            background-color: #c1ebe8;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .task-list {
+            background-color: #a6e3dd;
+            width: 90%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .task-list h2 {
+            margin: 0 0 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .task-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .task-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .task-item label {
+            font-size: 1.1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="psigologa.png" alt="Profile Image">
+        </div>
+        <div class="task-list">
+            <h2>Lista de tareas</h2>
+            <div class="task-item">
+                <input type="checkbox" id="inicio">
+                <label for="inicio">Inicio</label>
+            </div>
+            <div class="task-item">
+                <input type="checkbox" id="mis-reservas">
+                <label for="mis-reservas">Mis reservas</label>
+            </div>
+            <div class="task-item">
+                <input type="checkbox" id="programar-cita">
+                <label for="programar-cita">Programar una cita</label>
+            </div>
+            <div class="task-item">
+                <input type="checkbox" id="ingresar-cita">
+                <label for="ingresar-cita">Ingresar a tu cita</label>
+            </div>
+            <div class="task-item">
+                <input type="checkbox" id="configuracion">
+                <label for="configuracion">Configuración</label>
+            </div>
+            <div class="task-item">
+                <input type="checkbox" id="cerrar-sesion">
+                <label for="cerrar-sesion">Cerrar sesión</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
