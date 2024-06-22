@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/WebDesign/Inicio/Inicio-style.css"> 
+</head>
+<body>
+    <header>
+        <h1>PSYCONNECT</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="/WebDesign/AcercaDe/AcerdaDe.html">Acerca de</a></li>
+                <li><a href="/WebDesign/Contacto/Contacto.html">Contacto</a></li>
+                <li><a href="/WebDesign/PreguntasFrecuentes/PreguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="/WebDesign/Testimonios/Testimonios.html">Testimonios</a></li>
+                <li><a href="/WebDesign/ReservaOnline/ReservasOnline.html">Reserva online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>Información</h2>
+            <div id="message"></div>
+            <form id="infoForm">
+                <label for="name">¿Cuál es tu nombre?</label>
+                <input type="text" id="name" name="name" required>
+
+                <label>¿Cuántos años tienes?</label>
+                <div class="radio-group">
+                    <input type="radio" id="age1" name="age" value="18-25">
+                    <label for="age1">Entre 18 y 25</label>
+                    <input type="radio" id="age2" name="age" value="26-35">
+                    <label for="age2">Entre 26 y 35</label>
+                    <input type="radio" id="age3" name="age" value="36-45">
+                    <label for="age3">Entre 36 y 45</label>
+                    <input type="radio" id="age4" name="age" value="46+">
+                    <label for="age4">46 o más</label>
+                </div>
+
+                <label for="email">¿Cuál es tu correo electrónico?</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">¿Cuál es tu número de teléfono?</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label>¿Qué servicios psicológicos te interesan?</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="service1" name="service" value="anxiety">
+                    <label for="service1">Manejo de ansiedad</label>
+                    <input type="checkbox" id="service2" name="service" value="depression">
+                    <label for="service2">Tratamiento de depresión</label>
+                    <input type="checkbox" id="service3" name="service" value="relationships">
+                    <label for="service3">Terapia de pareja</label>
+                    <input type="checkbox" id="service4" name="service" value="stress">
+                    <label for="service4">Manejo del estrés</label>
+                    <input type="checkbox" id="service5" name="service" value="self-esteem">
+                    <label for="service5">Autoestima</label>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <img src="/Imagenes Web/Therapy.jpg" alt="Sesión de terapia">
+        <h2>PSYCONNECT</h2>
+        <button>Reserva tu cita</button>
+    </footer>
+
+    <script src="/WebDesign/Inicio/Inicio-script.js"></script>
+</body>
+</html>
