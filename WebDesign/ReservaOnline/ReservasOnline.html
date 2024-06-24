@@ -1,0 +1,93 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Reservas - PSYCONNECT</title>
+    <link rel="stylesheet" href="/WebDesign/ReservaOnline/ReservasOnline-style.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+    <header>
+        <h1>PSYCONNECT</h1>
+        <nav>
+            <ul>
+                <li><a href="/WebDesign/Inicio/Inicio.html">Inicio</a></li>
+                <li><a href="/WebDesign/AcercaDe/AcerdaDe.html">Acerca de</a></li>
+                <li><a href="/WebDesign/Contacto/Contacto.html">Contacto</a></li>
+                <li><a href="/WebDesign/PreguntasFrecuentes/PreguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="/WebDesign/Testimonios/Testimonios.html">Testimonios</a></li>
+                <li><a href="#">Reserva online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation-management-section">
+            <h2>Gestión de Reservas</h2>
+            <div class="calendar-container">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month">&lt;</button>
+                        <h3 id="calendar-month-year"></h3>
+                        <button id="next-month">&gt;</button>
+                    </div>
+                    <div class="calendar-days">
+                        <div class="week">
+                            <div class="day">Sun</div>
+                            <div class="day">Mon</div>
+                            <div class="day">Tue</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Thu</div>
+                            <div class="day">Fri</div>
+                            <div class="day">Sat</div>
+                        </div>
+                        <div id="calendar-dates" class="dates"></div>
+                    </div>
+                </div>
+                <div class="appointments-list">
+                    <h3>Appointment List (4)</h3>
+                    <div class="appointment" data-status="visited">
+                        <span>Caroline Herschel</span>
+                        <span>8:00 AM - 9:30 AM</span>
+                        <span>Status: <input type="checkbox" checked> Visited</span>
+                        <button>Profile</button>
+                        <button>View / Print Prescription</button>
+                    </div>
+                    <div class="appointment" data-status="visited">
+                        <span>Albert Einstein</span>
+                        <span>10:00 AM - 11:30 AM</span>
+                        <span>Status: <input type="checkbox" checked> Visited</span>
+                        <button>Profile</button>
+                        <button>Create Prescription</button>
+                    </div>
+                    <div class="appointment" data-status="visited">
+                        <span>Dorothy Hodgkin</span>
+                        <span>12:00 PM - 1:30 PM</span>
+                        <span>Status: <input type="checkbox" checked> Visited</span>
+                        <button>Profile</button>
+                        <button>Create Prescription</button>
+                    </div>
+                    <div class="appointment" data-status="pending">
+                        <span>Erwin Schroedinger</span>
+                        <span>6:00 PM - 7:30 PM</span>
+                        <span>Status: <input type="checkbox"> Visited</span>
+                        <button>Profile</button>
+                        <button>Create Prescription</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>PsyConnect</p>
+        <p>Grupo 2 ISC Tecnologías</p>
+        <p>©2024 por PsyConnect</p>
+    </footer>
+
+    <script src="/WebDesign/ReservaOnline/ReservasOnline-js.js"></script> <!-- Enlace al archivo JS externo -->
+</body>
+</html>
